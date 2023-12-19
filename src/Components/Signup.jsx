@@ -96,7 +96,7 @@ export default function Signup() {
                     </div>
                 </div>
                 <div className='connect'>
-                    <img src="/Images/Graphic.jpg" alt="" style={{ width: '39.9vw', borderRadius: "10px" }} />
+                    <img src="/Images/Graphic.jpg" alt="" className='cimg'  />
                     <h5 className='text-primary text-center fw-bold mt-3'>Lets Connect with us Today For better Tommorrow</h5>
                     <p className='text-white text-center ms-2 me-2'>
                         Experience the convergence of expertise and innovation at NexTrade – where web development, graphic designing, animation, SEO mastery, content writing, and blogging excellence unite. Our team thrives on crafting immersive digital experiences, building robust web solutions, and designing captivating visuals that speak volumes. With a blend of technical prowess and creative finesse, we redefine online presence, optimizing for success and engagement. Connect with us today to embark on a journey where skill meets imagination, and every pixel resonates with purpose and precision</p>
