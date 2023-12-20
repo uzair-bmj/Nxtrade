@@ -18,7 +18,7 @@ nav:hover {
     /* background-image: radial-gradient(rgb(82, 78, 78) , rgb(27, 27, 27)); */
     background-color: rgb(19, 18, 18);
     transition: .3s;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 

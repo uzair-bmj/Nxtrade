@@ -53,28 +53,6 @@ export default function Signup() {
 
     }
 
-
-
-
-
-    // function display() {
-    //     const loginSections = document.querySelectorAll(".loginsection");
-    //     loginSections.forEach(section => {
-    //         if (section.style.display === "block") {
-    //             section.style.display = "none";
-
-    //         } else {
-    //             section.style.display = "block";
-    //         }
-    //     });
-    // }
-
-
-
-
-
-
-
     return (
         <>
             <div className=' sig'>
