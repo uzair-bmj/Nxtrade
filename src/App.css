@@ -131,7 +131,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
 }
 
 .search {
-    background-color: transparent;
+    background-color: white;
     border: 1px solid black;
     border-radius: 15px;
 }
