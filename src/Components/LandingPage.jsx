@@ -8,11 +8,10 @@ import Footer from './Footer'
 export default function LandingPage() {
   return (
     <>
-    <Navbar/>
+
     <HeroSection/>
     <Skills/>
     <JoinUs/>
-    <Footer/>
     
     
     </>

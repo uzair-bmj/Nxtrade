@@ -1,22 +1,25 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import "./App.css"
-import HeroSection from './Components/HeroSection'
-import Skills from './Components/Skillssection/Skills'
-import Team from './Components/Team'
-import Signup from './Components/Signup'
 import Footer from './Components/Footer'
+import Signup from './Components/Signup'
+import Login from './Components/Login'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './Components/LandingPage'
+
 
 export default function App() {
   return (
-    <div style={{backgroundColor : 'black'}}>  
-      <Navbar/>
-      <HeroSection/>
-      <Skills/>
-      <Team/>
-      <Signup/>
-      <Footer/>
-    
+    <div style={{ backgroundColor: 'black' }}>
+
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/signup' element={<Signup />} />
+        
+      </Routes>
+      <Footer />
+
     </div>
   )
 }
