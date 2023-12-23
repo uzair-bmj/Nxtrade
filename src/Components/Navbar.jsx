@@ -23,15 +23,17 @@ export default function Navbar() {
             NexTrade
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler bg-light"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            // style={{color : 'white'}}
           >
-            <span className="navbar-toggler-icon"></span>
+            
+            <span className="navbar-toggler-icon " ></span>
           </button>
           <div
             className="collapse navbar-collapse mt-1"
