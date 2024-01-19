@@ -343,6 +343,13 @@ nav .navbar-nav .nav-item .nav-link:active {
         align-items: center;
         text-align: center;
     }
+    .cn{
+        
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        
+    }
 }
 
 .footer {
@@ -358,6 +365,7 @@ nav .navbar-nav .nav-item .nav-link:active {
     text-align: center;
 
 }
+
 
 .footer:hover {
     background-color: rgb(26, 25, 25);

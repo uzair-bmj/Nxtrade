@@ -1,17 +1,17 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
 
 
 
-
+  const navigate = useNavigate()
 
 
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg navbar-light position-absolute"
+        className="navbar navbar-expand-lg navbar-light position-absolute fixed-top"
         style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: "500" }}
       >
         <div className="container-fluid ">
@@ -30,9 +30,9 @@ export default function Navbar() {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            // style={{color : 'white'}}
+          // style={{color : 'white'}}
           >
-            
+
             <span className="navbar-toggler-icon " ></span>
           </button>
           <div
@@ -75,29 +75,35 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            <form className="d-flex">
+            <div className="d-flex">
               <input
                 class="form-control me-2 search"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <Link to="/signup">
-                <button
-                  className="btn btn-primary mx-2"
-                  style={{ borderRadius: "10px" }}
-                >
-                  SignUp
-                </button>
-              </Link>
+
+              <button
+                className="btn btn-primary mx-2"
+                style={{ borderRadius: "10px" }}
+                onClick={() => { navigate('./signup') }}
+              >
+                SignUp
+              </button>
+              <button
+                className="btn btn-primary mx-2"
+                style={{ borderRadius: "10px" }}
+                onClick={() => { navigate('./signin') }}
+              >
+                Signin
+              </button>
 
 
-              {/* <i class="fa-solid fa-bag-shopping icon ms-2"></i> */}
-            </form>
+            </div>
           </div>
         </div>
       </nav>
-      <Outlet />
+
     </>
   );
 }
